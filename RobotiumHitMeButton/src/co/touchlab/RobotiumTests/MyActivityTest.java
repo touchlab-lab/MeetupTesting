@@ -1,9 +1,11 @@
-package co.touchlab.HitMeButton;
+package co.touchlab.RobotiumTests;
 
 import android.test.ActivityInstrumentationTestCase2;
 import android.widget.Button;
+import co.touchlab.HitMeButton.MyActivity;
 import com.robotium.solo.Solo;
 import junit.framework.Assert;
+import co.touchlab.HitMeButton.R;
 
 /**
  * This is a simple framework for a test of an Application.  See
@@ -12,7 +14,7 @@ import junit.framework.Assert;
  * <p/>
  * To run this test, you can type:
  * adb shell am instrument -w \
- * -e class co.touchlab.HitMeButton.MyActivityTest \
+ * -e class MyActivityTest \
  * co.touchlab.HitMeButton.tests/android.test.InstrumentationTestRunner
  */
 public class MyActivityTest extends ActivityInstrumentationTestCase2<MyActivity>
