@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HitMeButton</string>
+    <string name="hitme">Hit Me!</string>
+    <string name="ouch">Ouch</string>
+</resources>
