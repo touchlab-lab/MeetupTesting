@@ -38,15 +38,20 @@ public class MyActivityTest extends ActivityInstrumentationTestCase2<MyActivity>
 
     public void testHittingTheButton() {
 
+        //Search for a view via a specific id and check that it matches a string in the strings xml file
         onView(withId(R.id.button)).check(matches(withText(R.string.hitme)));
 
+        //Find a view that contains the text from the strings file and click on it
         onView(withText(R.string.hitme)).perform(click());
 
+        //Find a view with a specific id and check that it matches a string in the strings xml file
         onView(withId(R.id.text)).check(matches(withText(R.string.ouch)));
 
+        //Find view that contains a string and click it
         onView(withText(R.string.hitme)).perform(click());
 
-        onView(withId(R.id.text)).check(matches(not(withText(R.string.ouch))));
+        //Find a view that has a specific id and check that it does NOT match "Ouch"
+        onView(withId(R.id.text)).check(matches(not(withText("Ouch"))));
 
     }
 

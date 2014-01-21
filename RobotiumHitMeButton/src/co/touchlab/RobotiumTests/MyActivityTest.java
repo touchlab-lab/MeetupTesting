@@ -40,14 +40,20 @@ public class MyActivityTest extends ActivityInstrumentationTestCase2<MyActivity>
 
     public void testMyActivity() throws Exception
     {
+        //Search for a button that has the text "Hit Me"
+        //Shows the tester that you can search for views via specific text
         assertTrue(solo.searchButton("Hit Me!"));
 
+        //Cause an action to click on the button
         solo.clickOnButton("Hit Me!");
 
+        //Check to see if the word "ouch" is anywhere on the screen
         assertTrue(solo.searchText("Ouch"));
 
+        //Click on a view via searching for a specific id
         solo.clickOnView(solo.getView(R.id.button));
 
+        //Check the screen that it does not contain the words "Ouch"
         assertFalse(solo.searchText("Ouch"));
     }
 

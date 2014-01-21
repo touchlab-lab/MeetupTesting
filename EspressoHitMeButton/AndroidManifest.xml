@@ -12,6 +12,8 @@
         <uses-library android:name="android.test.runner"/>
     </application>
 
+    <!-- Espresso uses a custom InstrumentRunner that is build on top of the native android test runner
+        Be sure to take note of this in the Run Configurations-->
     <instrumentation
             android:name="com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
             android:targetPackage="co.touchlab.HitMeButton"
