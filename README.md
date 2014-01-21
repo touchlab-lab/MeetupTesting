@@ -4,7 +4,7 @@ Robotium vs. Espresso
 
 Download and install the source code via command line using:
 
-git clone https://github.com/touchlab/MeetupTesting.git.
+git clone https://github.com/touchlab/MeetupTesting.git
 
 Once the code has finished downloading use your IDE of choice and import the project into your IDE.  With the wizard you should be able to click through it and have it build with no problems.
 
